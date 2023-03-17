@@ -11,14 +11,21 @@ const Signup = () => {
     name:"",
     email:"",
     pass:"",
+    confirmPass: "",
+    showPassword: false,
   });
 
   const [errorMsg, setErrorMsg] = useState("");
   const [confMsg, setConfMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
   const handleSubmission = () => {
-    if(!values.name || !values.email || !values.pass){
+    
+    if(!values.name || !values.email || !values.pass || !values.confirmPass){
       setErrorMsg("All fields are mandatory");
+      return;
+    }
+    if(values.pass !== values.confirmPass){
+      setErrorMsg("Password & Confirm Password do not match!");
       return;
     }
     setConfMsg("Successfully Registered!");
@@ -40,7 +47,7 @@ const Signup = () => {
     }
       );
   }
-
+  
   return (
     <div className={styles.container}>
         <div className={styles.innerBox}>
@@ -60,12 +67,16 @@ const Signup = () => {
             type="password"
             placeholder="Enter password"
             onChange={(e) => setValues((prev)=>({...prev, pass:e.target.value}))}/>
+            <InputControl 
+            label="Confirm Password" 
+            type="password"
+            placeholder="Enter Confirm password"
+            onChange= {(e) => setValues((prev)=>({...prev, confirmPass:e.target.value}))}/>
 
             <div className={styles.footer}>
               {
                 errorMsg ? <b className={styles.error}>{errorMsg}</b> : <b className={styles.msg}>{confMsg}</b>
-              }
-                
+              }                
                 <button onClick={handleSubmission}
                 disabled={submitButtonDisabled}
                 >Signup</button>
