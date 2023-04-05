@@ -1,4 +1,3 @@
-
 .card-grp {
     padding: .1rem;
     display: flex;
@@ -23,6 +22,10 @@
   .card-link:hover {
     color: white;
     font-weight: 600;
+  }
+
+  .card-btn:hover {
+    font-weight: 700;
   }
 
   @media screen and (max-width: 600px) {

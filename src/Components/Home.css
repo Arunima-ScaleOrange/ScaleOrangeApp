@@ -1,6 +1,8 @@
 body{
     background: linear-gradient(to right, #9900ff, #cc80ff);
     padding: 5px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .welcome-msg{

@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 import './Cards.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-// import Project from './Project';
 import building from "../Assets/building.jpg";
 
 const Cards = (props) => {
-  const unique_id = props.id;
-  const small_id = unique_id.slice(0,8);
+  // const unique_id = props.id;
+  // const small_id = unique_id.slice(0,8);
 
   return (
     <div className='card-grp'>
@@ -19,10 +18,11 @@ const Cards = (props) => {
         <Card.Text>
           {props.text} 
         </Card.Text>
+        <Link to='/Project' className='card-link'>
         <Button variant="primary" className='card-btn'>
-          <Link to='/Project' className='card-link'>View</Link>
+          View
             {/* <Link to={`/Project/${small_id}`} className='card-link'>View</Link> */}
-        </Button>
+        </Button></Link>
       </Card.Body>
     </Card>
     </div>

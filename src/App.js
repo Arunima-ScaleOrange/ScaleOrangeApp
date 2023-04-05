@@ -9,7 +9,9 @@ import Contact from './Components/Contact';
 import { useEffect, useState } from 'react';
 import { auth } from './firebase';
 import Project from './Components/Project';
-// import Project from './Components/Project';
+import MapView from './Components/MapView';
+import Default from './Components/Default';
+import Admin from './Components/Admin';
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -30,12 +32,15 @@ function App() {
     <div className="app">
       <Router>
           <Routes>
-              <Route path='/' element={<Login/>}/>
+              <Route path='/' element={<Default/>} />
+              <Route path='/login' element={<Login/>}/>
+              <Route path='/admin' element={<Admin/>}/>
               <Route path='/signup' element={<Signup/>}/>
               <Route path='/home' element={<Home name={userName}/>} />
               <Route path='/about' element={<About/>}/>
               <Route path='/contact' element={<Contact/>}/>
-              <Route path='/project' element={<Project/>}/>
+              <Route path='/project' element={<Project name={userName}/>}/>
+              <Route path='/mapview' element={<MapView/>}/>
           </Routes>
       </Router>
     </div>

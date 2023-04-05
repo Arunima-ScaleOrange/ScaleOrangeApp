@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.map-btn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+@media only screen and (max-width: 540px) {
+    .ant-btn-primary{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .map-btn {
+        margin-left: 25rem;
+    }
+    .plot {
+        width: 90vw;
+    }
+}

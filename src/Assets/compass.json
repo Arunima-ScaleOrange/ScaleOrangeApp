@@ -1,0 +1,104 @@
+[
+    {
+        "id":"compass-star",
+        "fill":"#000",
+        "strokeWidth":"0.265",
+        "d":"M33.606 17.866L9.247 28.427 30.03 11.904l-10.561-24.36L35.99 8.327 60.35-2.234 39.568 14.288 50.13 38.648z",
+        "clipPath":"",
+        "transform":"matrix(.4496 .3273 -.26771 .54317 18 13.122)",
+        "text":{
+            "x": "",
+            "y":"",
+            "fill":"",
+            "strokeWidth":"",
+            "label":"",
+            "transform":"",
+            "fontSize":""
+        }
+    },
+    {
+        "id":"compass-N",
+        "fill":"",
+        "strokeWidth":"",
+        "d":"",
+        "clipPath":"",
+        "transform":"",
+        "text":{
+            "x":"26.821",
+            "y":"12.572",
+            "fill":"#000",
+            "strokeWidth":"0.455",
+            "label":"N",
+            "transform":"scale(1.10615 .90404)",
+            "fontSize":"7.274"
+        }
+    },
+    {
+        "id":"compass-E",
+        "fill":"",
+        "strokeWidth":"",
+        "d":"",
+        "clipPath":"",
+        "transform":"",
+        "text":{
+            "x":"45.283",
+            "y":"35.132",
+            "fill":"#000",
+            "strokeWidth":"0.455",
+            "label":"E",
+            "transform":"scale(1.10615 .90404)",
+            "fontSize":"7.274"
+        }
+    },
+    {
+        "id":"compass-W",
+        "fill":"",
+        "strokeWidth":"",
+        "d":"",
+        "clipPath":"",
+        "transform":"",
+        "text":{
+            "x":"7.6",
+            "y":"35.132",
+            "fill":"#000",
+            "strokeWidth":"0.455",
+            "label":"W",
+            "transform":"scale(1.10615 .90404)",
+            "fontSize":"7.274"
+        }
+    },
+    {
+        "id":"compass-S",
+        "fill":"",
+        "strokeWidth":"",
+        "d":"",
+        "clipPath":"",
+        "transform":"",
+        "text":{
+            "x":"27.537",
+            "y":"56.581",
+            "fill":"#000",
+            "strokeWidth":"0.455",
+            "label":"S",
+            "transform":"scale(1.10615 .90404)",
+            "fontSize":"7.274"
+        }
+    },
+    {
+        "id":"road",
+        "fill":"#fff",
+        "strokeWidth":"0.271",
+        "d":"M141.827 117.295c7.605 2.477 7.605 2.502 7.605 2.502l-.053-2.552z",
+        "clipPath":"",
+        "transform":"",
+        "text":{
+            "x":"",
+            "y":"",
+            "fill":"",
+            "strokeWidth":"",
+            "label":"",
+            "transform":"",
+            "fontSize":""
+        }
+    }
+]
