@@ -20,7 +20,7 @@ const Cards = (props) => {
         </Card.Text>
         <Link to='/Project' className='card-link'>
         <Button variant="primary" className='card-btn'>
-          View
+          View 
             {/* <Link to={`/Project/${small_id}`} className='card-link'>View</Link> */}
         </Button></Link>
       </Card.Body>

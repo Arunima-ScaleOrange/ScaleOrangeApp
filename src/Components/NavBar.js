@@ -20,9 +20,7 @@ const NavBar = () => {
       <button className="hamburger"
       onClick={() => {
         setIsNavExpanded(!isNavExpanded);
-      }}
-      >
-        {/* icon from heroicons.com */}
+      }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
